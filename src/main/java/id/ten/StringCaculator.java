@@ -21,7 +21,10 @@ public class StringCaculator {
         return String.valueOf(a-b);
     }
 
-    public static String kali(int i, int i1) {
+    public static String kali(int i, int i1) throws Exception {
+        if(i1 == 0) {
+            throw new Exception("Throw an exception");
+        }
         return String.valueOf(i*i1);
     }
 

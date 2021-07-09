@@ -1,5 +1,6 @@
 package id.ten;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -30,8 +31,16 @@ public class StringCalculatorTest {
 
     @Test
     @DisplayName("Test Perkalian dengan input a dan b yang valid")
-    public void kali_withProperValue_thenReturnedValidValue() {
+    public void kali_withProperValue_thenReturnedValidValue() throws Exception {
         assertEquals("15", StringCaculator.kali(3, 5));
+    }
+
+    @Test
+    @DisplayName("Test Perkalian dengan input b == 0 dan throw Exception")
+    public void kali_withInvalidBValue_thenReturnedException() {
+        Assertions.assertThrows(Exception.class, () -> {
+           StringCaculator.kali(1,0);
+        });
     }
 
     @Test
