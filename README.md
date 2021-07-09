@@ -18,3 +18,6 @@ diatas kita tambahkan beberapa persyaratan kembali yaitu :
 - Jika input satu kosong, maka keluarkan output => "Silahkan input parameter ke-1"
 - Jika input dua kosong, maka keluarkan output => "Silahkan input parameter ke-2"
 - Jika input satu dan dua kosong, maka keluarkan output => "Silahkan input parameter satu dan dua"
+
+
+![gambar](images/result.JPG "gambar")
